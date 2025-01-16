@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors!</h1>
+    <h2 id="winner"></h2>
+    <div class="Scoreboard-container">
+        <div class="scoreboard">
+            <h2>Player</h2>
+            <p>You chose: <span id="uopt">Start game to see</span></p>
+            <p>score: <span id="player-score">0</span></p>
+        </div>
+        <div class="scoreboard">
+            <h2>Computer</h2>
+            <p>Computer chose: <span id="copt">Start game to see</span></p>
+            <p>score: <span id="computer-score">0</span></p>
+        </div>
+    </div>
+    <div id="round">
+        <h2>Round <span id="round-number">0</span></h2>
+    </div>
+    <div id="option-container" style="display:flex ; flex-direction: column">
+        <div class="option">
+            <button id="opt1" onclick="play('rock')">
+                Rock
+            </button>
+            <button id="opt2" onclick="play('paper')">
+                Paper
+            </button>
+            <button id="opt3" onclick="play('scissor')">
+                Scissor
+            </button>
+        </div>
+    </div>
+    <div id="hidden">
+        <button id="play-again" style="display: none">Play Again</button>
+        <button id="exit" style="display: none" onclick="exit()">Exit</button>
+    </div> 
+   <script src="gameplay.js"></script>
+</body>
+</html>
